@@ -1,0 +1,44 @@
+﻿
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+body {
+    background-color: lightblue;
+
+}
+
+ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+label {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+a {
+    display:inline-block;
+    padding: 12px 20px;
+    background: rgb(69, 69, 116);
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    
+}
+    a:hover {
+        color:rgb(116, 214, 116);
+    }
+
+table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+table {
+    margin: 15px;
+}

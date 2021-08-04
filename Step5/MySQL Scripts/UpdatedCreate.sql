@@ -16,12 +16,12 @@ CREATE TABLE Business (
 	BusinessName VARCHAR(35) NOT NULL,
 	CostAndFees DECIMAL(7,2),
 	BusinessServices CHAR(2) NOT NULL,
-	NumOfCostumers INT
+	NumOfCustomers INT
 );
 
 CREATE TABLE BusinessPhone (
 	BusinessID INT,
-	PhoneNumber INT,
+	PhoneNumber VARCHAR(10),
 
 	FOREIGN KEY (BusinessID) REFERENCES Business(BusinessID) ON DELETE CASCADE
 );
@@ -29,7 +29,7 @@ CREATE TABLE BusinessPhone (
 CREATE TABLE Customers (
 	CustomerID INT PRIMARY KEY,
 	CustomerName VARCHAR(35) NOT NULL,
-	CustomerPhoneNumber INT,
+	CustomerPhoneNumber VARCHAR(10),
     LastUseInMonths INT
 );
 
@@ -46,7 +46,7 @@ CREATE TABLE Reviews (
 	CustomerID INT,
 	BusinessID INT,
 	ReviewID INT,
-	Comments CHAR, /* the word "comment" seems to be a keyword as it is highlighted in blue when used, so in MY Sql it is changed to "Comments" */ 
+	Comments VARCHAR(180), /* the word "comment" seems to be a keyword as it is highlighted in blue when used, so in MY Sql it is changed to "Comments" */ 
 	Score INT CHECK(Score >= 0 AND Score <= 5),
 
 	PRIMARY KEY (CustomerID,BusinessID,ReviewID),
@@ -58,7 +58,7 @@ CREATE TABLE Contracts (
 	ContractID INT,
 	BusinessID INT,
 	CustomerID INT,
-	ContactDate DATE NOT NULL,
+	ContractDate DATE NOT NULL,
 	ServiceCost INT NOT NULL,
 
 	PRIMARY KEY (BusinessID, CustomerID,ContractID),
