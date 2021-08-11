@@ -42,3 +42,8 @@ table, td, th {
 table {
     margin: 15px;
 }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 600px 600px;
+}

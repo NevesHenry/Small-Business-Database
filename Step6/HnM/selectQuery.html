@@ -8,35 +8,75 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form method="post" action="php/selectAllQuery.php">
-      <fieldset>
-        <legend>Display All Businesses</legend>
+    <h1> Welcome to H&M PHP MySQ Database</h1>
+    <div class="wrapper">
+      <div>
+        <form method="post" action="php/selectAllQuery.php">
+          <fieldset>
+            <legend  style="color:rgb(38, 126, 38);">Display All Businesses</legend>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
         <br />
         <br />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
-    <br />
-    <br />
-    <form method="post" action="php/selectLikeQuery.php">
-      <fieldset>
-        <legend>Display Business whose name starts with</legend>
-        <label>Business Name Starts with</label>
-        <input type="text" name="bname" /> <br />
-        <br />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
+        <form method="post" action="php/selectLikeQuery.php">
+          <fieldset>
+            <legend style="color:rgb(38, 126, 38);">Display Business whose name starts with</legend>
+            <label>Business Name Starts with</label>
+            <input type="text" name="bname" /> <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
 
-    <br />
-    <br />
-    <form method="post" action="php/selectWhereQuery.php">
-      <fieldset>
-        <legend>Display Business with a given number of Customers or more</legend>
-        <label>Number of Customers</label> <input type="text" name="numOfCusto" /> <br />
         <br />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
+        <br />
+        <form method="post" action="php/selectWhereQuery.php">
+          <fieldset>
+            <legend style="color:rgb(38, 126, 38);">Display Business with a given number of Customers or more</legend>
+            <label>Number of Customers</label> <input type="text" name="numOfCusto" /> <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+      
+      <div>
+        <form method="post" action="php/selectAllEmployeesQuery.php">
+          <fieldset>
+            <legend style="color:rgb(38, 126, 38);">Display All Employees</legend>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+        <br />
+        <br />
+        <form method="post" action="php/selectEmployeeFromBusiness.php">
+          <fieldset>
+            <legend style="color:rgb(38, 126, 38);">Display All Employees from a specific Business</legend>
+            <label>BusinessID:</label> <input type="number" name="bID" /> <br />
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+        <br />
+        <br />
+        <form method="post" action="php/selectMaxSalary.php">
+          <fieldset>
+            <legend style="color:rgb(38, 126, 38);">Display Employee with the highest Salary in a given Business</legend>
+            <label>BusinessID:</label> <input type="number" name="bID" /> <br />
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <br/>
+    <a href="index.html">Back to the homepage</a>
   </body>
 </html>

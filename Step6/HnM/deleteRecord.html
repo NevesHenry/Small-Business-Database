@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <p>Delete the record of a Business, given their Business ID:</p>
-    <form method="post" action="php/deleteRecord.php">
-      <label>Business ID</label> <input type="number" name="bID" /> <br />
-      <br />
-      <br />
-      <input type="submit" value="Submit" />
-    </form>
+    <h1> Welcome to H&M PHP MySQ Database</h1>
+
+    <fieldset>
+      <legend style="color:rgb(38, 126, 38);">Delete the record of a Business, given their Business ID:</legend>
+      <form method="post" action="php/deleteRecord.php">
+        <label>Business ID</label> <input type="number" name="bID" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+
+    <hr/>
+    
+    <fieldset>
+      <legend style="color:rgb(38, 126, 38);">Delete the record of an Employee, given their Employee ID:</legend>
+      <form method="post" action="php/deleteEmployeeRecord.php">
+        <label>Employee ID</label> <input type="number" name="eID" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+    <br/>
+    <a href="index.html">Back to the homepage</a>
   </body>
 </html>

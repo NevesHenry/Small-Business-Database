@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <h1> Welcome to H&M PHP MySQ Database</h1>
     <form method="post" action="php/insertIntoValues.php">
       <fieldset>
-        <legend>Enter the information of the Business:</legend>
+        <legend style="color:rgb(38, 126, 38);">Enter the information of the Business:</legend>
 
         <label>Business ID </label><input type="number" name="bID" /> <br />
         <label>Business Address </label><input type="text" name="bAddr" />
@@ -33,6 +34,21 @@
         <label>Cost & Fees</label><input name="cost" type="number"/> <br />
         <label>Business Services</label><input name="services" type="text" maxlength="2"/><br />
         <label>Number of Customers</label><input name="customers" type="number"/> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <hr>
+
+    <form method="post" action="php/insertEmployeeValues.php">
+      <fieldset>
+        <legend style="color:rgb(38, 126, 38);">Enter the information of the Employee:</legend>
+
+        <label>Employee ID </label><input type="number" name="eID" /> <br />
+        <label>StartDate </label><input type="date" name="sDate" /> <br/>
+        <label>Business ID</label><input type="number" name="busID" /> <br />
+        <label>Salary</label><input name="salary" type="number"/> <br />
         <br />
         <input type="submit" value="Submit" />
       </fieldset>

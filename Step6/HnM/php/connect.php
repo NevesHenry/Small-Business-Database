@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+	<h1> Welcome to H&M PHP MySQ Database</h1>
 	<?php
 	$servername = "localhost";   // means the database server is running on your own cmputer and not on a remote computer on a network or on the Internet.
 	$username = "root";          // this is the default administrator account to access the DBMS

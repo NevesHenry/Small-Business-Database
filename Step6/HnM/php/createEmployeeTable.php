@@ -27,15 +27,14 @@ the code in catch-block is executed. */
 		echo "<p style='color:red'>Connection Failed: " . $err->getMessage() . "</p>\r\n";
 	}
 
-	$sql = "CREATE TABLE Business (
-		BusinessID INT PRIMARY KEY,
-		BusinessAddress VARCHAR(100), 
-		NumOfAddresses INT,
-		BusinessName VARCHAR(35) NOT NULL,
-		CostAndFees DECIMAL(7,2),
-		BusinessServices CHAR(2) NOT NULL,
-		NumOfCustomers INT
-	);";
+	$sql = "CREATE TABLE Employee (
+        EmployeeID INT PRIMARY KEY,
+        StartDate DATE NOT NULL,
+        BusinessID INT NOT NULL,
+        Salary INT,
+    
+		FOREIGN KEY (BusinessID) REFERENCES Business(BusinessID)    
+    );";
 
 	try {
 		$conn->exec($sql);

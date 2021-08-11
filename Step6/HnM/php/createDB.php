@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<h1> Welcome to H&M PHP MySQ Database</h1>
 	<?php
 	$servername = "localhost";
 	$databasename = "Hnm";

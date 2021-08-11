@@ -27,9 +27,9 @@ the code in catch-block is executed. */
     }
 
     try {
-        $sql = "DELETE FROM " . $dbname . ".Business WHERE BusinessID = :bID";
+        $sql = "DELETE FROM " . $dbname . ".Employee WHERE EmployeeID = :eID";
         $stmnt = $conn->prepare($sql);     // read about prepared statement here: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-        $stmnt->bindParam(':bID', $_POST['bID']);   // :stdId is the variable that we used in $sql, there must be a colon (:) in front of it.
+        $stmnt->bindParam(':eID', $_POST['eID']);   // :stdId is the variable that we used in $sql, there must be a colon (:) in front of it.
         //  stdId in $_POST['stdId'] is the name of the element in HTML Form. Make sure it matches exactly the name of the form element in HTML 
 
         $stmnt->execute();
