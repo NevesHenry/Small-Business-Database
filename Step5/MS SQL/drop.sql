@@ -1,10 +1,9 @@
 <<<<<<< HEAD
 /*
 	Henrique Reis Neves
-	SID: 100313047
 
 	CPSC 2221 Database Systems: Group Project - Step 4
-
+	Last Modified: 2022-08-03
 ----------------------------------------------------------------------------------------------------------------------
 	DROP TABLES: Note the order of commands. 
 	We first drop child tables with foreign keys before dropping the parent table.
@@ -21,11 +20,6 @@ DROP TABLE Business;
 
 =======
 /*
-	Henrique Reis Neves
-	SID: 100313047
-
-	CPSC 2221 Database Systems: Group Project - Step 4
-
 ----------------------------------------------------------------------------------------------------------------------
 	DROP TABLES: Note the order of commands. 
 	We first drop child tables with foreign keys before dropping the parent table.
