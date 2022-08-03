@@ -1,9 +1,8 @@
 <<<<<<< HEAD
 /*	Henrique Reis Neves
-	SID: 100313047
 
 	CPSC 2221 Database Systems: Group Project - Step 4
-	
+	Last Modified: 2022-08-03
 ----------------------------------------------------------------------------------------------------------------------
 	Insert values into tables 
 */
